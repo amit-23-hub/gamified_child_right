@@ -1,0 +1,118 @@
+.container{
+background-color:#46465f;
+margin: 0px;
+padding: 0px;
+height: 100vh;
+box-sizing: border-box;
+position: relative;
+/* background: url('img2.jpg');
+background-repeat: no-repeat;
+background-size: cover; */
+}
+
+.box{
+position: absolute;
+  margin-top: 6%;
+  margin-left: 23%;
+    text-align: center;
+    justify-content: center;
+    padding: 2%;
+    height:auto;
+    width: 55%;
+    background-color: #7a7de4;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 3px 5px 9px 3px;
+}
+.box h1{
+  overflow-y:hidden;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+.box input{
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Pacifico', cursive;
+  font-size: 27px;
+  margin-top: 4%;
+  padding: 4px;
+  border-radius: 15px;
+  width: 45%;
+
+}
+.box button {
+  font-weight: 500;
+  padding: 7px;
+  height: 10%;
+  font-size: 27px;
+  margin-top: 5%;
+  margin-left: 2%;
+  cursor: pointer;
+  background-color: rgb(90 246 90);
+  width: 30%;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: #7f72f8 5px 5px 15px 2px;
+}
+.box p{
+  overflow-y:hidden;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Pacifico', cursive;
+  text-align: left;
+font-size: 28px;
+}
+#phont{
+  font-family: sans-serif;
+  font-weight:600;
+}
+@media screen and (max-width:753px) {
+  .box{
+    margin-top: 15%;
+    margin-left: 19%;
+    width: 60%;
+  }
+  .box h1{
+    font-size: 22px;
+  }
+  .box p{
+    font-size: 20px;
+  }
+  #phont{
+    font-size: 20px;
+  }
+  .box button{
+    font-size: 20px;
+  }
+  .box input{
+    font-size: 22px;
+    width: 55%;
+  }
+
+}
+@media screen and (max-width:415px){
+.box{
+  margin-top: 30%;
+  width: 78%;
+  margin-left: 9%;
+}
+.box h1{
+  font-size: 19px;
+}
+.box p{
+  font-size: 18px;
+}
+#phont{
+  font-size: 18px;
+}
+.box button{
+  font-size: 16px;
+}
+.box input{
+  width: 60%;
+}
+
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dict.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Dancing+Script:wght@600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <h1>📚 DICTIONARY 📖</h1>
+        <input type="text" placeholder="Enter word" id="input">
+        <button class="btn" id="btn" onclick="Search(api_url)">Search</button>
+        <p id="phont"></p>
+        <p id="meaning"></p>
+        </div>
+    </div>
+    <script>
+ let meaning=document.getElementById("meaning");
+ let phont=document.getElementById("phont");
+ let input=document.getElementById("input");
+ let btn=document.getElementById("btn");
+ let api_url="https://api.dictionaryapi.dev/api/v2/entries/en/" ;
+async function Search(url){
+const response=await fetch( "https://api.dictionaryapi.dev/api/v2/entries/en/" + input.value);
+var data= await response.json();
+meaning.innerHTML=data[0].meanings[0].definitions[0].definition;
+phont.innerHTML=data[0].phonetics[1].text;
+console.log(data);
+}
+   </script>
+</body>
+</html>

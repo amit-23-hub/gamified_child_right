@@ -1,0 +1,100 @@
+*, *::before, *::after {
+  font-size: 106%;
+  box-sizing: border-box;
+  font-family: Gotham Rounded;
+  }
+  
+  :root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+  .quizz{
+    margin-bottom: 446px;
+    position: absolute;
+    color: white;
+    z-index: 1;
+    font-size: 4.3rem;
+  }
+  
+  body {
+background-image: url('HD_Video_Background_VBHD0005_Background_Dvd_Background_Dvd_Download_Background_For_Chroma_Key.gif');
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
+  }
+  
+  body.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  body.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .container {
+    color: white;
+    background-image: linear-gradient(#4266f9, black);
+    height: 51%;
+    margin-top: 67px;
+    width: 573px;
+    max-width: 86%;
+    border-radius: 17px;
+    padding: 21px;
+    box-shadow: 29px 23px 55px -26px white;
+  }
+  
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+  }
+  
+  .btn:hover {
+    border-color: black;
+  }
+  
+  .btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+  }
+  
+  .btn.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .start-btn, .next-btn {
+    border-radius: 15px;
+    background-color: #2bff2b;
+    color: #000000;
+    margin-top: 86px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hide {
+    display: none;
+  }

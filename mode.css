@@ -1,0 +1,62 @@
+body {
+    height: 140vh;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    position: relative;
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(244, 242, 242) url(Green\ Merry\ Christmas\ Rectangular\ Printable\ \ Sticker.png) no-repeat;
+}
+
+video {
+    background-repeat: repeat-y;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 305vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+img {
+    margin-top: 190px;
+    margin-left: 51px;
+    width: 123%;
+    text-align: center;
+    justify-content: center;
+}
+
+.bgimg {
+    z-index: 2;
+    opacity: 0.46;
+    margin-left: -7px;
+    width: 100%;
+    animation: rotate 5s linear infinite;
+}
+
+.p {
+    margin-left: 9%;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 29px;
+    z-index: auto;
+    position: absolute;
+    font-size: 35px;
+    color: white;
+}
+
+.q {
+    width: 60%;
+}
+
+audio {
+    height: 30%;
+    width: 80%;
+}
